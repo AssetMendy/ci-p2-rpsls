@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Cabin Sketch;
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+    background-color: antiquewhite;
+}
+
+/* Style for a title, How to Play link and Sound effects toggle */
+header {
+    margin: 30px 30px 0;
+    position: relative;
+}
+
+#logo {
+    text-align: left;
+    font-size: 300%;
+    color: black;
+}
+
+#instructions-link {
+    font-size: 175%;
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+#instructions-link:hover {
+    border-bottom: 2px dashed black;
+}
+
+.close-btn {
+    font-size: 300%;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+}

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     border: none;
     font-family: Cabin Sketch;
-    position: relative;
 }
 
 html, body {
@@ -17,29 +19,78 @@ html, body {
 /* Style for a title, How to Play link and Sound effects toggle */
 header {
     margin: 30px 30px 0;
-    position: relative;
 }
 
 #logo {
+    width: 100%;
     text-align: left;
     font-size: 300%;
     color: black;
+    display: inline;
 }
 
 #instructions-link {
-    font-size: 175%;
-    display: inline;
+    margin-right: 30px;
+    font-size: 220%;
+    float: right;
     text-decoration: none;
     color: black;
+}
+
+.toggle-switch {
+    float: right;
+    font-size: 150%;
 }
 
 #instructions-link:hover {
-    border-bottom: 2px dashed black;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: rgb(68, 45, 16);
+} 
+
+#instructions-link, #logo, .toggle-switch, #close-btn {
+    line-height: 75px;
 }
 
-.close-btn {
+#close-btn {
     font-size: 300%;
     text-decoration: none;
     color: black;
-    position: absolute;
+    float: right;
+}
+
+/* Game section - User Side */
+
+#game-section {
+    width: 100%;
+    height: max-content;
+    padding: 150px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+#user-side {
+    width: 500px;
+    height: 500px;
+     
+    background-color: blue;
+
+}
+
+background: url('https://upload.wikimedia.org/wikipedia/commons/7/72/Santipur_B.Ed_College_Logo.png') no-repeat scroll center center transparent;
+
+#computer-side {
+    width: 500px;
+    height: 500px;
+    
+    background-color: red;
+}
+
+#answer-side {
+    width: 500px;
+    height: 500px;
+    
+    background-color: green;
+
 }

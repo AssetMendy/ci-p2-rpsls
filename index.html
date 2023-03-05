@@ -5,24 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
-      </style>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>The RPSLS game</title>
 </head>
 <body>
     <header>
         <h1 id="logo">Rock.Paper.Scissors.Lizard.Spock.</h1>
-        <a id="instructions-link" href="instructions.html">How to Play</a>
         <label class="toggle-switch">
-            <label for="sounds-toggle">Sound Effects</label>
+            <label class="toggle-switch" for="sounds-toggle">Sound</label>
             <input type="checkbox" id="sounds-toggle">
             <span class=""></span>
         </label>
+        <a id="instructions-link" href="instructions.html">How to Play</a>
     </header>
-    <section>
+    <section id="game-section">
+        <div>
+            
+        </div>
         <div id="user-side">
+            <button id="rock" data-type="rock">
+                <img src="assets/images/rock.png" alt="A button to choose the Rock">
+            </button>
+            <button id="paper" data-type="paper">
+                <img src="assets/images/paper.png" alt="A button to choose the Paper">
+            </button>
+            <button id="scissors" data-type="scissors">
+                <img src="assets/images/scissors.png" alt="A button to choose the Scissors">
+            </button>
+            <button id="lizard" data-type="lizard">
+                <img src="assets/images/lizard.png" alt="A button to choose the Lizard">
+            </button>
+            <button id="spock" data-type="spock">
+                <img src="assets/images/spock.png" alt="A button to choose the Spock">
+            </button>
+        </div>
+        <div id="answer-side">
 
         </div>
         <div id="computer-side">

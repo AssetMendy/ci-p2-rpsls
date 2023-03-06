@@ -19,31 +19,36 @@
         <a id="instructions-link" href="instructions.html">How to Play</a>
     </header>
     <section id="game-section">
-        <div>
-            
+        <div id="scores-area">
+                <div class="width">
+                    <h2>You</h2>
+                </div>
+                <div class="width">
+                    <p><span>0</span> : <span>0</span></p>
+                </div>
+                <div class="width">
+                    <h2>Computer</h2>
+                </div>
+            </div>   
         </div>
-        <div id="user-side">
-            <button id="rock" data-type="rock">
-                <img src="assets/images/rock.png" alt="A button to choose the Rock">
-            </button>
-            <button id="paper" data-type="paper">
-                <img src="assets/images/paper.png" alt="A button to choose the Paper">
-            </button>
-            <button id="scissors" data-type="scissors">
-                <img src="assets/images/scissors.png" alt="A button to choose the Scissors">
-            </button>
-            <button id="lizard" data-type="lizard">
-                <img src="assets/images/lizard.png" alt="A button to choose the Lizard">
-            </button>
-            <button id="spock" data-type="spock">
-                <img src="assets/images/spock.png" alt="A button to choose the Spock">
-            </button>
-        </div>
-        <div id="answer-side">
-
-        </div>
-        <div id="computer-side">
-
+        <div id="game-area">
+            <div id="user-side">
+                <input id="rock" class="icon-size" data-type="rock" type="image" src="assets/images/rock.png" alt="A button to choose the Rock">
+    
+                <input id="paper" class="icon-size" data-type="paper" type="image" src="assets/images/paper.png" alt="A button to choose the Paper">
+                
+                <input id="scissors" class="icon-size" data-type="scissors" type="image" src="assets/images/scissors.png" alt="A button to choose the Scissors">
+    
+                <input id="lizard" class="icon-size" data-type="lizard" type="image" src="assets/images/lizard.png" alt="A button to choose the Lizard">
+                
+                <input id="spock" class="icon-size" data-type="spock" type="image" src="assets/images/spock.png" alt="A button to choose the Spock">
+            </div>
+            <div id="answer-side">
+    
+            </div>
+            <div id="computer-side">
+                <p>Waiting for Your turn...</p>
+            </div>
         </div>
     </section>
     <script src="assets/js/script.js"></script>

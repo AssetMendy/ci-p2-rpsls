@@ -13,20 +13,67 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
-
-
 function startGame(userHand) {
-  let botHand = Math.floor((Math.random() * 5) + 1)
-  if (botHand === 1) {
+  let botHand = Math.floor((Math.random() * 5))
+  if (botHand === 0) {
     botHand = "rock"
-  } else if (botHand === 2) {
+  } else if (botHand === 1) {
     botHand = "paper"
-  } else if (botHand === 3) {
+  } else if (botHand === 2) {
     botHand = "scissors"
-  } else if (botHand === 4) {
+  } else if (botHand === 3) {
     botHand = "lizard"
   } else {
     botHand = "spock"
   }
-  console.log(botHand)
+  return compareHands(userHand, botHand);
+}
+
+function compareHands(userHand, botHand) {
+  let result;
+
+  // Code compares user's choice (userHand) to computers choice (botHand) and returns Win, Loss or Draw
+  if (userHand === "rock") {
+    if (botHand === "scissors" || botHand === "lizard") {
+      result = "win";
+    } else if (botHand === "spock" || botHand === "paper") {
+      result = "loss";
+    } else if (botHand === userHand) {
+      result = "draw"
+    }
+  } else if (userHand === "paper") {
+    if (botHand === "rock" || botHand === "spock"){
+      result = "win";
+    } else if (botHand === "scissors" || botHand === "lizard") {
+      result = "loss";
+    } else if (botHand === userHand) {
+      result = "draw"
+    }
+  } else if (userHand === "scissors") {
+    if (botHand === "paper" || botHand === "lizard"){
+      result = "win";
+    }  else if (botHand === "rock" || botHand === "spock") {
+      result = "loss";
+    } else if (botHand === userHand) {
+      result = "draw"
+    }
+  } else if (userHand === "lizard") {
+    if (botHand === "paper" || botHand === "spock"){
+      result = "win";
+    } else if (botHand === "rock" || botHand === "scissors") {
+      result = "loss";
+    } else if (botHand === userHand) {
+      result = "draw"
+    }
+  } else if (userHand === "spock") {
+    if (botHand === "rock" || botHand == "scissors") {
+      result = "win";
+    } else if (botHand === "paper" || botHand === "lizard") {
+      result = "loss";
+    } else if (botHand === userHand) {
+      result = "draw"
+    }
+  }
+
+  return showWinner()
 }

@@ -75,5 +75,17 @@ function compareHands(userHand, botHand) {
     }
   }
 
-  return showWinner()
+  return checkWinner(result)
+}
+
+function checkWinner(result) {
+  if (result === "win") {
+    let userScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++userScore;
+  } else if (result === "loss") {
+    let botScore = parseInt(document.getElementById("bot-score").innerText);
+    document.getElementById("bot-score").innerText = ++botScore;
+  } else {
+    alert `It's a draw! You and Computer both throwed ${userHand}!`
+  }
 }

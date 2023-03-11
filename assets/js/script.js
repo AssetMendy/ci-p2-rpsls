@@ -16,15 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
 function startGame(userHand) {
   let botHand = Math.floor((Math.random() * 5))
   if (botHand === 0) {
-    botHand = "rock"
+    botHand = "rock";
   } else if (botHand === 1) {
-    botHand = "paper"
+    botHand = "paper";
   } else if (botHand === 2) {
-    botHand = "scissors"
+    botHand = "scissors";
   } else if (botHand === 3) {
-    botHand = "lizard"
+    botHand = "lizard";
   } else {
-    botHand = "spock"
+    botHand = "spock";
   }
   return compareHands(userHand, botHand);
 }
@@ -39,7 +39,7 @@ function compareHands(userHand, botHand) {
     } else if (botHand === "spock" || botHand === "paper") {
       result = "loss";
     } else if (botHand === userHand) {
-      result = "draw"
+      result = "draw";
     }
   } else if (userHand === "paper") {
     if (botHand === "rock" || botHand === "spock"){
@@ -47,7 +47,7 @@ function compareHands(userHand, botHand) {
     } else if (botHand === "scissors" || botHand === "lizard") {
       result = "loss";
     } else if (botHand === userHand) {
-      result = "draw"
+      result = "draw";
     }
   } else if (userHand === "scissors") {
     if (botHand === "paper" || botHand === "lizard"){
@@ -55,7 +55,7 @@ function compareHands(userHand, botHand) {
     }  else if (botHand === "rock" || botHand === "spock") {
       result = "loss";
     } else if (botHand === userHand) {
-      result = "draw"
+      result = "draw";
     }
   } else if (userHand === "lizard") {
     if (botHand === "paper" || botHand === "spock"){
@@ -63,7 +63,7 @@ function compareHands(userHand, botHand) {
     } else if (botHand === "rock" || botHand === "scissors") {
       result = "loss";
     } else if (botHand === userHand) {
-      result = "draw"
+      result = "draw";
     }
   } else if (userHand === "spock") {
     if (botHand === "rock" || botHand == "scissors") {
@@ -71,21 +71,27 @@ function compareHands(userHand, botHand) {
     } else if (botHand === "paper" || botHand === "lizard") {
       result = "loss";
     } else if (botHand === userHand) {
-      result = "draw"
+      result = "draw";
     }
   }
 
-  return checkWinner(result)
-}
+  return addScoreToWinner(result)
 
-function checkWinner(result) {
-  if (result === "win") {
-    let userScore = parseInt(document.getElementById("user-score").innerText);
-    document.getElementById("user-score").innerText = ++userScore;
-  } else if (result === "loss") {
-    let botScore = parseInt(document.getElementById("bot-score").innerText);
-    document.getElementById("bot-score").innerText = ++botScore;
-  } else {
-    alert `It's a draw! You and Computer both throwed ${userHand}!`
+  function addScoreToWinner(result) {
+
+
+    if (result === "win") {
+      let userScore = parseInt(document.getElementById("user-score").innerText);
+      document.getElementById("user-score").innerText = ++userScore;
+    } else if (result  === "loss") {
+      let botScore = parseInt(document.getElementById("bot-score").innerText);
+      document.getElementById("bot-score").innerText = ++botScore;
+    } else {
+      alert `It's a draw! You and Computer both throwed !`
+      console.log(userHand)
+    }
   }
 }
+
+
+              

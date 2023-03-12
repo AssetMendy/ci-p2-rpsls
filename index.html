@@ -16,9 +16,10 @@
             <input type="checkbox" id="sounds-toggle">
             <span class=""></span>
         </label>
-        <a id="instructions-link" href="instructions.html">How to Play</a>
+        <a id="instructions-link" href="http://www.samkass.com/theories/RPSSL.html" target="_blank">How to Play</a>
     </header>
     <section id="game-section">
+        <!-- This section is to display Score for User and Computer, which is updated by "addScoreToWinner" function  -->
         <div id="scores-area">
                 <div class="width">
                     <h2>You</h2>
@@ -32,6 +33,7 @@
             </div>   
         </div>
         <div id="game-area">
+            <!-- This section is listened by JS script, which then starts the game -->
             <div id="user-side">
                 <input id="rock" class="icon-size" data-type="rock" type="image" src="assets/images/rock.png" alt="A button to choose the Rock">
     
@@ -44,24 +46,16 @@
                 <input id="spock" class="icon-size" data-type="spock" type="image" src="assets/images/spock.png" alt="A button to choose the Spock">
             </div>
             <div id="answer-side">
-    
+                <!-- This section is updated from JS "addScoreToWinner" function, and displays the Winner along with User and Computer hands -->
+                <div>
+                    <p id="hand-results"></p>
+                    <p id="turn-results"></p>
+                </div>
             </div>
             <div id="computer-side">
-                <p>Waiting for Your turn...</p>
-                <div class="hidden" id="computer-rock">
-                    
-                </div>
-                <div class="hidden" id="computer-paper">
-
-                </div>
-                <div class="hidden" id="computer-scissors">
-
-                </div>
-                <div class="hidden" id="computer-lizard">
-
-                </div>
-                <div class="hidden" id="computer-spock">
-
+                <p class="hidden-placeholder">Waiting for Your turn...<span id="count-down"> </span></p>
+                <div>
+                    <img class="icon-size" id="bot-result" src=>
                 </div>
             </div>
         </div>

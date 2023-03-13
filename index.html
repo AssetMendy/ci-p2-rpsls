@@ -11,11 +11,6 @@
 <body>
     <header>
         <h1 id="logo">Rock.Paper.Scissors.Lizard.Spock.</h1>
-        <label class="toggle-switch">
-            <label class="toggle-switch" for="sounds-toggle">Sound</label>
-            <input type="checkbox" id="sounds-toggle">
-            <span class=""></span>
-        </label>
         <a id="instructions-link" href="http://www.samkass.com/theories/RPSSL.html" target="_blank">How to Play</a>
     </header>
     <section id="game-section">
@@ -46,6 +41,9 @@
                 <input id="spock" class="icon-size" data-type="spock" type="image" src="assets/images/spock.png" alt="A button to choose the Spock">
             </div>
             <div id="answer-side">
+                <div>
+                    <p id="answer-placeholder">To Start Choose the Hand</p>
+                </div>
                 <!-- This section is updated from JS "addScoreToWinner" function, and displays the Winner along with User and Computer hands -->
                 <div>
                     <p id="hand-results"></p>
@@ -53,9 +51,9 @@
                 </div>
             </div>
             <div id="computer-side">
-                <p class="hidden-placeholder">Waiting for Your turn...<span id="count-down"> </span></p>
+                <p id="computer-placeholder">Waiting for Your turn...<span id="count-down"> </span></p>
                 <div>
-                    <img class="icon-size" id="bot-result" src=>
+                    <img class="icon-size" id="bot-result" style="display: none;">
                 </div>
             </div>
         </div>

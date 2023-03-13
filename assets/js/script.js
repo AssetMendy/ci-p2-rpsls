@@ -7,13 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
               resetGame();
           } else {
               let userHand = this.getAttribute("data-type")
-                  startGame(userHand);
+                startGame(userHand);
           }
       })
   }
 })
-
-
 
 function startGame(userHand) {
 
@@ -78,7 +76,9 @@ function startGame(userHand) {
       }
     }
   
-    return addScoreToWinner(result)
+    return setTimeout(() => {
+      addScoreToWinner(result)
+    }, 0.5 * 1000);
   }
   
   function addScoreToWinner(result) {
@@ -106,6 +106,10 @@ function startGame(userHand) {
 
 
 function displayBotHand(botHand) {
+  document.getElementById("answer-placeholder").style.display = "none"
+  document.getElementById("computer-placeholder").style.display = "none"
+  document.getElementById("bot-result").style.display = "block"
+
   if (botHand === "rock") {
     document.getElementById("bot-result").src = "/assets/images/rock.png"
   } else if (botHand === "paper") {
@@ -119,6 +123,5 @@ function displayBotHand(botHand) {
   } else {
     alert `Unknown hand gesture!`
   }
-
 }
 

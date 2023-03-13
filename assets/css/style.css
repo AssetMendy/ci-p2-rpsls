@@ -37,10 +37,6 @@ header {
     color: black;
 }
 
-.toggle-switch {
-    float: right;
-    font-size: 150%;
-}
 
 #instructions-link:hover {
     text-decoration: underline;
@@ -48,16 +44,10 @@ header {
     text-decoration-color: rgb(68, 45, 16);
 } 
 
-#instructions-link, #logo, .toggle-switch, #close-btn {
+#instructions-link, #logo {
     line-height: 75px;
 }
 
-#close-btn {
-    font-size: 300%;
-    text-decoration: none;
-    color: black;
-    float: right;
-}
 
 /* Game section - User Side */
 #game-section {
@@ -67,6 +57,7 @@ header {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    
 }
 
 #scores-area {
@@ -78,6 +69,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    line-height: 60px;
 }
 
 
@@ -129,7 +122,7 @@ input:active {
 }
 
 .hidden-placeholder {
-    display: none;
+    display: ;
 }
 
 #computer-rock {
@@ -147,6 +140,8 @@ input:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
 
 #answer-side p {

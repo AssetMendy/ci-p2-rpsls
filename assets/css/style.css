@@ -25,7 +25,7 @@ header {
     width: 100%;
     text-align: left;
     font-size: 300%;
-    color: black;
+    color: rgb(29, 28, 28);
     display: inline;
 }
 
@@ -34,14 +34,17 @@ header {
     font-size: 220%;
     float: right;
     text-decoration: none;
-    color: black;
+    color: rgb(29, 28, 28);
 }
-
 
 #instructions-link:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
-    text-decoration-color: rgb(68, 45, 16);
+    text-decoration-color: rgb(29, 28, 28);
+} 
+
+#instructions-link:active {
+    color: rgb(136, 112, 112);
 } 
 
 #instructions-link, #logo {

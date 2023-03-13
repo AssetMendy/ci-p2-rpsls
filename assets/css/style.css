@@ -121,26 +121,40 @@ input:active {
     font-size: 150%;
 }
 
-#computer-rock {
-    position: relative;
-    background-image: url(/assets/images/rock.png) no repeat;
-    z-index: 101;
-    width: 150px;
-    height: 150px;
-}
-
 #answer-side {
     width: 500px;
     height: 500px;
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     
 }
 
 #answer-side p {
-    font-size: 150%;
+    font-size: 220%;
     text-align: center;
+}
+
+#answer-placeholder {
+    font-size: 150%;
+}
+
+#reset-btn {
+    background-color: transparent;
+    font-size: 200%;
+    border: 2px dashed rgb(68, 45, 16);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(194, 190, 80);
+}
+
+#reset-btn:hover {
+    box-shadow: 0 10px rgb(172, 168, 71);
+    border-radius: 10px;
+}
+
+#reset-btn:active {
+    box-shadow: 0 5px rgb(172, 168, 71);
+    border-radius: 10px;
 }

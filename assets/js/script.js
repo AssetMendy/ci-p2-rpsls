@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
+
 function startGame(userHand) {
 
   let botHand = Math.floor((Math.random() * 5))
@@ -102,6 +103,7 @@ function startGame(userHand) {
     }
   }
 
+  
 }
 
 
@@ -109,6 +111,7 @@ function displayBotHand(botHand) {
   document.getElementById("answer-placeholder").style.display = "none"
   document.getElementById("computer-placeholder").style.display = "none"
   document.getElementById("bot-result").style.display = "block"
+  document.getElementById("reset-btn").style.display = "block"
 
   if (botHand === "rock") {
     document.getElementById("bot-result").src = "/assets/images/rock.png"
@@ -125,3 +128,6 @@ function displayBotHand(botHand) {
   }
 }
 
+function resetGame() {
+  window.location.reload();
+}

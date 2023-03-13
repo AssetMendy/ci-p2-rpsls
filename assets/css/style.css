@@ -121,10 +121,6 @@ input:active {
     font-size: 150%;
 }
 
-.hidden-placeholder {
-    display: ;
-}
-
 #computer-rock {
     position: relative;
     background-image: url(/assets/images/rock.png) no repeat;

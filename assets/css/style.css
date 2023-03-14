@@ -88,8 +88,8 @@ header {
 }
 
 #user-side {
-    width: 500px;
-    height: 500px;
+    width: 31em;
+    height: 31em;
     text-align: center;
     border: 2px dashed rgb(0, 0, 0);
     border-radius: 20px;
@@ -111,8 +111,8 @@ input:active {
 }
 
 #computer-side {
-    width: 500px;
-    height: 500px;
+    width: 31em;
+    height: 31em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,8 +125,8 @@ input:active {
 }
 
 #answer-side {
-    width: 500px;
-    height: 500px;
+    width: 31em;
+    height: 31em;
     
     display: flex;
     justify-content: space-around;
@@ -162,9 +162,126 @@ input:active {
     border-radius: 10px;
 }
 
-/* Responsive design for mobile with width below 450px  */
+/* Responsive design for mobile with width 450px and below  */
 
 @media screen and (max-width: 450px) {
+    #scores-area {
+        display: none;
+    }
+
+    #game-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #game-section {
+        width: 100%;
+        height: max-content;
+        padding: 80px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #computer-side {
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    #answer-side {
+        width: 80%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #user-side {
+        width: 80%;
+        height: 50vh;
+        text-align: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .icon-size {
+        width: 50vw;
+        height: 20vh;
+        padding: 20px 0 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 600px) {
+    #scores-area {
+        display: none;
+    }
+
+    #game-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #game-section {
+        width: 100%;
+        height: max-content;
+        padding: 80px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #computer-side {
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    #answer-side {
+        width: 80%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #user-side {
+        width: 80%;
+        height: 50vh;
+        text-align: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .icon-size {
+        width: 30%;
+        height: 40%;
+        padding: 20px 0 0;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 900px and up) */
+
+@media screen and (max-width: 900px) {
     #scores-area {
         display: none;
     }
@@ -213,8 +330,8 @@ input:active {
     }
 
     .icon-size {
-        width: 50vw;
-        height: 20vh;
+        width: 30%;
+        height: 40%;
         padding: 20px 0 0;
     }
-}
+} 

@@ -161,3 +161,60 @@ input:active {
     box-shadow: 0 5px rgb(172, 168, 71);
     border-radius: 10px;
 }
+
+/* Responsive design for mobile with width below 450px  */
+
+@media screen and (max-width: 450px) {
+    #scores-area {
+        display: none;
+    }
+
+    #game-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #game-section {
+        width: 100%;
+        height: max-content;
+        padding: 80px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #computer-side {
+        width: 170vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    #answer-side {
+        width: 170vw;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #user-side {
+        width: 170vw;
+        height: 50vh;
+        text-align: center;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .icon-size {
+        width: 50vw;
+        height: 20vh;
+        padding: 20px 0 0;
+    }
+}

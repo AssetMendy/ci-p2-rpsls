@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
+/**
+ * startGame function starts game 
+ * when one of any hand gestures are clicked
+ * and assigns botHand, then compares it to userHand
+ * and then adds the score via addScoreToWinner function
+ */
 function startGame(userHand) {
 
   let botHand = Math.floor((Math.random() * 5));
@@ -33,6 +38,10 @@ function startGame(userHand) {
 
   return compareHands(userHand, botHand);
 
+  /**
+   * compareHands function take a hand from "data-type" attribute
+   * and compares it to botHand declared by Math.random method
+   */
   function compareHands(userHand, botHand) {
     let result;
   
@@ -84,6 +93,10 @@ function startGame(userHand) {
     }, 0.5 * 1000);
   }
   
+  /**
+   * addScoreToWinner function checks the result
+   * from compareHands function and adds a score to winner
+  */
   function addScoreToWinner(result) {
   
     if (result === "win") {
@@ -104,11 +117,13 @@ function startGame(userHand) {
       displayBotHand(botHand);
     }
   }
-
-  
 }
 
-
+/** 
+ * displayBotHand function returns to a user
+ * an image of the hand gesture bot chose
+ * and updates what element of HTML should be dispalyed or not
+*/
 function displayBotHand(botHand) {
   document.getElementById("answer-placeholder").style.display = "none";
   document.getElementById("computer-placeholder").style.display = "none";
@@ -129,7 +144,11 @@ function displayBotHand(botHand) {
     alert (`Unknown hand gesture!`);
   }
 }
-
+``
+/**
+ * resetGame function reloads a page
+ * and thus resets whole game progress
+ */
 function resetGame() {
   window.location.reload();
 }

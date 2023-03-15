@@ -60,7 +60,6 @@ header {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    
 }
 
 #scores-area {
@@ -221,7 +220,7 @@ input:active {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (between 451px and 600px) */
 
 @media only screen and (max-width: 600px) and (min-width: 451px) {
     #scores-area {
@@ -280,7 +279,7 @@ input:active {
 }
 
 
-/* Large devices (laptops/desktops, 900px and up) */
+/* Large devices (between 601px and 900px) */
 
 @media screen and (max-width: 900px) and (min-width: 601px) {
     #scores-area {
@@ -337,6 +336,7 @@ input:active {
     }
 } 
 
+/* Medium Laptop/Display (between 901px and 1550px) */
 
 @media screen and (max-width: 1550px) and (min-width: 901px) {
     

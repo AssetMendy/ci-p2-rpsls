@@ -1,108 +1,80 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock.Paper.Scissors.Lizard.Spock.
 
-Welcome AssetMendy,
+This project is a game inspired by a hand game "Rock Paper Scissors Lizard Spock", which is one of the variations of popular hand game "Rock Paper Scissors".
+This game is designed for people who want to spent their time playing games and add a little challenge by adding more combination options compared to a standard "Rock Paper Scissors" game.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Tap to open deployed website](https://assetmendy.github.io/ci-p2-rpsls/)
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ - __"Rock.Paper.Scissors.Lizard.Spock." Logo__
 
-`python3 -m http.server`
+    The logo for the website is made using the name of an actual game stylized in a way that makes user have an idea that this website is a game.
 
-A blue button should appear to click: _Make Public_,
+    ![Logo of the website](/documentation/logo.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+- __Game Rules link__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    "Game Rules" link allows a user to learn about "Rock Paper Scissors Lizard Spock" from the creator himself leading them to another website.
 
-A blue button should appear to click: _Make Public_,
+    - As part of interactivity, the link is fully interactive with  users actions (i.e. Hovering over the link, clicking the link)
+    - To give better experience learning the game rules, "Game Rules" is opened in a new tab, instead of opening the link in the same tab
 
-Another blue button should appear to click: _Open Browser_.
+    ![Image of "Game Rules" link](/documentation/game-rules-link.jpg)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Score section__
 
-To log into the Heroku toolbelt CLI:
+    Score Section provides a user a chance to see current score against the oponnent (bot), as well this section visually divides which side of game area is whose.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    ![Image of Score section showing "You" and "Computer" with current score result of "1 : 2"](/documentation/user-bot-score-area.jpg)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Gaming area__
 
-------
+    Gaming area is the main section where the game itself takes place. This section is dynamic and the section updates with the activity of the user.
 
-## Release History
+    - This section consists of User, Answer and Opponent area
+    - User area allows user to control and make decision when playing the game
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    ![Image of Gaming Area](/documentation/gaming-area.jpg)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __Answer area__
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    Answer area allows a user to see result of the turn and shows who is the winner for the turn. As well, it gives comparative result of both hands chosen.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    ![Image of Answer area showing result of the turn of "LIZARD beats PAPER" and "You Win this Turn!"](/documentation/answer-area.jpg)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- __Opponent area__
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    Opponent area allows a user to see what was the response of the opponent. Before the game started it displays a placeholder text to let user now that game will once user chooses the hand.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+     ![Image of Opponent area showing a hand gesture "Paper"](/documentation/bot-area.jpg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- __Reset Games button__
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    Reset Game button allows a user to reset the game and score to start the game over. The button is fully interactive and adapts to changes a user makes.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    ![Image of Reset Game button](/documentation/game-reset-button.jpg)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Features to implement
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    - Allow to play against another user
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Examples of various game result scenarios:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+__User Win:__
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Image showing result of User Win](/documentation/game-user-wins.jpg)
 
-------
+__User Loss:__
 
-## FAQ about the uptime script
+![Image showing result of User Loss](/documentation/game-bot-wins.jpg)
 
-**Why have you added this script?**
+__Draw:__
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Image showing result of Draw](/documentation/game-draw.jpg)
 
-**How will this affect me?**
+## Testing
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+__Validator Testing__
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!

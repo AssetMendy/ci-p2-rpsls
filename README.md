@@ -76,5 +76,58 @@ __Draw:__
 
 ## Testing
 
-__Validator Testing__
+### __Validator Testing__
 
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fassetmendy.github.io%2Fci-p2-rpsls%2F)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fassetmendy.github.io%2Fci-p2-rpsls%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JavaScript
+    - Only one error was found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 8 functions in this file.
+      - Function with the largest signature take 2 arguments, while the median is 0.5.
+      - Largest function has 23 statements in it, while the median is 7.
+      - The most complex function has a cyclomatic complexity value of 31 while the median is 2.5.
+
+### __Testing with Checklist__
+
+- The website was tested for key functions using checklist:
+
+    | Scenario                                          | Result |
+    | -----                                             | ------ |
+    | Page loads with no issues                         |   OK   |
+    | "Game Rules" link works and opens in new tab      |   OK   |
+    | Clicking any Hand gesture starts the game         |   OK   |
+    | Answer area shows correct Hand chosen by User     |   OK   |
+    | Answer area shows correct Hand chosen by Bot      |   OK   |
+    | Answer area shows correct winner of the turn      |   OK   |
+    | Score Section is updating, and values are correct |   OK   |
+    | Opponent area is updated with correct image       |   OK   |
+    | Reset button reset the game and Score section     |   OK   |
+
+
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://assetmendy.github.io/ci-p2-rpsls/
+
+## Credits
+
+### Media
+
+- Images used for hand gestures were taken from [here](https://www.pngwing.com/en/free-png-iiamd)
+
+### Code
+
+- A code for timeout methon was looked up from [here](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+- A code for adding style to certain HTML elemenet was looked up from [here](https://www.w3schools.com/jsref/prop_html_style.asp)
+
+### Content
+
+- Game was invented by Sam Kass and Karen Bryla, all info about this game can be found [here](http://www.samkass.com/theories/RPSSL.html)

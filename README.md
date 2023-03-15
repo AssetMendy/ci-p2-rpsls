@@ -74,6 +74,10 @@ __Draw:__
 
 ![Image showing result of Draw](/documentation/game-draw.jpg)
 
+## Wireframes
+
+- Wireframes for desktop can be found [here](/documentation/wireframes)
+
 ## Testing
 
 ### __Validator Testing__

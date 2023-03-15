@@ -18,7 +18,7 @@ html, body {
 
 /* Style for a title, How to Play link and Sound effects toggle */
 header {
-    margin: 30px 30px 0;
+    margin: 30px 0 0 30px;
 }
 
 #logo {
@@ -26,13 +26,13 @@ header {
     text-align: left;
     font-size: 300%;
     color: rgb(29, 28, 28);
-    display: inline;
+    display: block;
 }
 
 #instructions-link {
     margin-right: 30px;
     font-size: 220%;
-    float: right;
+    float: left;
     text-decoration: none;
     color: rgb(29, 28, 28);
 }
@@ -47,9 +47,6 @@ header {
     color: rgb(136, 112, 112);
 } 
 
-#instructions-link, #logo {
-    line-height: 75px;
-}
 
 
 /* Game section - User Side */

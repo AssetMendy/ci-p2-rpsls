@@ -131,15 +131,15 @@ function displayBotHand(botHand) {
   document.getElementById("reset-btn").style.display = "block";
 
   if (botHand === "rock") {
-    document.getElementById("bot-result").src = "/assets/images/rock.png";
+    document.getElementById("bot-result").src = "assets/images/rock.png";
   } else if (botHand === "paper") {
-    document.getElementById("bot-result").src = "/assets/images/paper.png";
+    document.getElementById("bot-result").src = "assets/images/paper.png";
   } else if (botHand === "scissors") {
-    document.getElementById("bot-result").src = "/assets/images/scissors.png";
+    document.getElementById("bot-result").src = "assets/images/scissors.png";
   } else if (botHand === "lizard") {
-    document.getElementById("bot-result").src = "/assets/images/lizard.png";
+    document.getElementById("bot-result").src = "assets/images/lizard.png";
   } else if (botHand === "spock") {
-    document.getElementById("bot-result").src = "/assets/images/spock.png";
+    document.getElementById("bot-result").src = "assets/images/spock.png";
   } else {
     alert (`Unknown hand gesture!`);
   }

@@ -162,6 +162,23 @@ input:active {
 /* Responsive design for mobile with width 450px and below  */
 
 @media screen and (max-width: 450px) {
+
+    #logo {
+        width: 100%;
+        text-align: left;
+        font-size: 150%;
+        color: rgb(29, 28, 28);
+        display: block;
+    }
+    
+    #instructions-link {
+        margin-right: 30px;
+        font-size: 150%;
+        float: left;
+        text-decoration: none;
+        color: rgb(29, 28, 28);
+    }
+
     #scores-area {
         display: none;
     }
@@ -185,7 +202,7 @@ input:active {
 
     #computer-side {
         width: 80%;
-        height: 50vh;
+        height: 25vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -195,24 +212,29 @@ input:active {
 
     #answer-side {
         width: 80%;
-        height: 30vh;
+        height: 15vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
     }
 
+    #answer-side p {
+        font-size: 130%;
+        text-align: center;
+    }
+
     #user-side {
         width: 80%;
-        height: 50vh;
+        height: 33vh;
         text-align: center;
         border: 2px dashed rgb(0, 0, 0);
         border-radius: 20px;
     }
 
     .icon-size {
-        width: 200px;
-        height: 170px;
+        width: 24vw;
+        height: 27vw;
         padding: 20px 0 0;
     }
 }
